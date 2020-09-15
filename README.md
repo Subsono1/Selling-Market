@@ -24,7 +24,7 @@
 
 ## Overview
 
-_**Vending-Market** This project is a website which will be a marketplace for products to be listed and sold by users new or used. Specifically this app is targeted for electronics and also to try to recycle by selling them .Here you will find awesome products to sell and to buy.
+_**Vending-Market** This project is a website which will be a marketplace for buying and selling products. New or used ones, specifically this app is targeted for electronics and art. this will also help recycling certain products for different users. Here you will find awesome products to sell and to buy.
 This app will include a full CRUD implementation with Rails on the back end and React on the front end._
 
 
