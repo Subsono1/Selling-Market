@@ -24,7 +24,7 @@
 
 ## Overview
 
-_**Vending-Market** This project is a website which will be a marketplace for products to be listed and sold. Specifically this app is targeted for  .Here you will find awesome products to post sell and buy.
+_**Vending-Market** This project is a website which will be a marketplace for products to be listed and sold by users new or used. Specifically this app is targeted for electronics and also to try to recycle by selling them .Here you will find awesome products to sell and to buy.
 This app will include a full CRUD implementation with Rails on the back end and React on the front end._
 
 
@@ -76,17 +76,13 @@ _The **Vending-Market** MVP_
 #### Wireframes
 
 
-![WireFrame](https://app.lucidchart.com/invitations/accept/4d7d4bbd-0c1c-40fc-bcfc-14259f380aef)
+[Wireframe](https://app.lucidchart.com/invitations/accept/4d7d4bbd-0c1c-40fc-bcfc-14259f380aef)
 
 
-
-#### Component Tree
-
-> Use this section to display the structure of how your React components are being rendered. This should show the parent to child relation between you components. In other words, show which components are rendering the other components. 
+ 
 
 #### Component Hierarchy
 
-> Use this section to define your React components and the data architecture of your app. This should be a reflection of how you expect your directory/file tree to look like. 
 
 ``` structure
 
@@ -160,7 +156,7 @@ src
 
 #### ERD Model
 
-![ERD](https://whimsical.com/Gr9sEYqbTxRsgtzcEhcQu5)
+[ERD](https://whimsical.com/Gr9sEYqbTxRsgtzcEhcQu5)
 
 
 
