@@ -24,7 +24,7 @@
 
 ## Overview
 
-_**Selling-Market** This project is a website which will be a marketplace for products to be listed and sold. Specifically this app is targeted for  .Here you will find awesome products to post sell and buy.
+_**Vending-Market** This project is a website which will be a marketplace for products to be listed and sold. Specifically this app is targeted for  .Here you will find awesome products to post sell and buy.
 This app will include a full CRUD implementation with Rails on the back end and React on the front end._
 
 
@@ -33,7 +33,7 @@ This app will include a full CRUD implementation with Rails on the back end and 
 ## MVP
 
 
-_The **Selling-Market** MVP_
+_The **Vending-Market** MVP_
 
 ### Will have back end server.
 
@@ -59,12 +59,11 @@ _The **Selling-Market** MVP_
 
 ### Libraries and Dependencies
 
-> Use this section to list all supporting libraries and dependencies, and their role in the project. Below is an example - this needs to be replaced!
 
 |     Library      | Description                                |
 | :--------------: | :----------------------------------------- |
 |   React          | _JS library to develop front end App._     |
-|   React Router   | _ collection of navegational components, routes for front end._ |
+|   React Router   | _collection of navegational components, routes for front end._ |
 |   Ruby on Rails  | _Library to develop Restful APIs  on back end._|
 |   Axios          | _To make Api calls for front end rendering._|
 |   React Animations | _Design animations for styling ._        |
@@ -92,13 +91,21 @@ _The **Selling-Market** MVP_
 ``` structure
 
 src
-|__ assets/
-      |__ fonts
-      |__ graphics
-      |__ images
-      |__ mockups
 |__ components/
-      |__ Header.jsx
+      |__ header
+      |__ home
+      |__ nav
+      |__ footer
+      |__ products
+      |__ product create
+      |__ product detail
+      |__ product edit
+      |__
+|__ layout/
+      |__ layout
+|__ container/
+      |__ product container
+|__ screens/
 |__ services/
 
 ```
@@ -129,11 +136,23 @@ src
 
 | Task                | Priority | Estimated Time | Time Invested | Actual Time |
 | ------------------- | :------: | :------------: | :-----------: | :---------: |
-| Add Contact Form    |    L     |     3 hrs      |     2 hrs     |    3 hrs    |
-| Create CRUD Actions |    H     |     3 hrs      |     1 hrs     |     TBD     |
-| TOTAL               |          |     6 hrs      |     3 hrs     |     TBD     |
+| Setup rails back end |    H    |     4 hrs      |     TBD       |     TBD     |
+| Setup Auth functionality|  H   |     3 hrs      |     TBD       |     TBD     |
+| Setup services      |    H     |     2 hrs      |     TBD       |     TBD     |
+| Header/Nav          |    L     |     2 hrs      |     TBD       |     TBD     |
+| Home                |    L     |     3 hrs      |     TBD       |     TBD     |
+| Footer              |    L     |     1.5 hrs    |     TBD       |     TBD     |
+| Create functionality|    H     |     3 hrs      |     TBD       |     TBD     |
+| Update functionality|    H     |     3 hrs      |     TBD       |     TBD     |
+| Show functionality  |    H     |     3 hrs      |     TBD       |     TBD     |
+| Delete functionality|    H     |     3 hrs      |     TBD       |     TBD     |
+| create functionality|    H     |     3 hrs      |     TBD       |     TBD     |
+| Responsive design   |    H     |     4 hrs      |     TBD       |     TBD     |
+| Basic CSS           |    H     |     3 hrs      |     TBD       |     TBD     |
+| advanced CSS        |    H     |     4 hrs      |     TBD       |     TBD     |
+| TOTAL               |          |     41.5 hrs   |     TBD       |     TBD     |
 
-> _Why is this necessary? Time frames are key to the development cycle. You have limited time to code your app, and your estimates can then be used to evaluate possibilities of your MVP and post-MVP based on time needed. It's best you assume an additional hour for each component, as well as a few hours added to the total time, to play it safe._
+
 
 <br>
 
@@ -141,7 +160,9 @@ src
 
 #### ERD Model
 
-> Use this section to display an image of a computer generated ERD model. You can use draw.io, Lucidchart or another ERD tool.
+![ERD](https://whimsical.com/Gr9sEYqbTxRsgtzcEhcQu5)
+
+
 
 <br>
 
@@ -149,14 +170,14 @@ src
 
 ## Post-MVP
 
-> Use this section to document ideas you've had that would be fun (or necessary) for your Post-MVP. This will be helpful when you return to your project after graduation!
+TBD
 
 ***
 
 ## Code Showcase
 
-> Use this section to include a brief code snippet of functionality that you are proud of and a brief description.
+TBD
 
 ## Code Issues & Resolutions
 
-> Use this section to list of all major issues encountered and their resolution.
+TBD
