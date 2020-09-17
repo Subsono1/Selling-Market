@@ -1,5 +1,5 @@
 Rails.application.routes.draw do
-  resources :orders, only: :index 
+  resources :orders
   resources :products
   post '/auth/login', to: 'authentication#login'
   get '/auth/verify', to: 'authentication#verify'
