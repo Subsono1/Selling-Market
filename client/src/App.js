@@ -6,6 +6,7 @@ import Layout from './layout/Layout';
 import Login from './screens/Login'
 
 import {loginUser, registerUser, verifyUser, removeToken } from './services/auth'
+import Registration from './screens/Register';
 
 
 
@@ -24,6 +25,7 @@ function App() {
   const loginSubmit = async (loginData) => {
     const userData = await loginUser(loginData)
     setCurrentUser(userData)
+    // useHistory.push('/home')
     
 
   }
@@ -49,9 +51,15 @@ function App() {
 
     
       <Switch>
-        <Route path='/'>
+        <Route exact path='/'>
           <Login loginSubmit={loginSubmit}/>
-          </Route>
+        </Route>
+        
+        <Route path='/register'>
+          <Registration
+            registerSubmit={registerSubmit}/>
+
+        </Route>
 
         </Switch>
         
