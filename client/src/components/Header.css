@@ -1,0 +1,29 @@
+header {
+  width: 100vw;
+  margin: 0;
+  padding: 0;
+}
+
+nav {
+  display: flex;
+  width: 100vw;
+  margin: 0;
+  padding: 0;
+}
+.link, 
+.brand {
+
+  font-size: 20px;
+  text-decoration: none;
+  margin: 20px 20px;
+  padding: 10px;
+}
+
+.brand {
+  margin-right: auto;
+}
+.basket {
+  
+  margin: 20px 35px;
+  padding: 10px;
+}
