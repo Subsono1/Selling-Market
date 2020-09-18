@@ -1,0 +1,30 @@
+.register-div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+
+  margin: auto;
+}
+
+.register-form {
+  display: flex;
+  flex-direction: column;
+  width: 500px;
+  padding: 10px;
+}
+
+.register-form_input {
+  padding: 10px;
+  margin: 10px;
+  /* border-top: none; */
+  border: none;
+  border-bottom: solid 1px;
+  /* background-color: rgb(220, 230, 246); */
+  outline: none;
+ 
+}
+
+::placeholder {
+  font-size: 30px;
+}
