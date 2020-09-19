@@ -14,10 +14,10 @@ function BuySell() {
   }
 
   return (
-    <>
+    <div className='buttons-div'>
       <h1>Welcome, what would you like to do today...</h1>
       <div className='buy-sell_div'>
-      <div className='buttonl-div'>
+      <div className='button-div'>
         <button onClick={handleBuy} className='action-button'>BUY</button>
 
       </div>
@@ -29,7 +29,7 @@ function BuySell() {
       </div>
       
       </div>
-      </>
+      </div>
   )
 }
 
