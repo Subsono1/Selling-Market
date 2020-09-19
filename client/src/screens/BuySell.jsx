@@ -1,5 +1,6 @@
 import React from 'react'
-import {useHistory} from 'react-router-dom'
+import { useHistory } from 'react-router-dom'
+import './BuySell.css'
 
 function BuySell() {
   const history = useHistory()
@@ -13,20 +14,22 @@ function BuySell() {
   }
 
   return (
-    <>
+    <div className='buttons-div'>
       <h1>Welcome, what would you like to do today...</h1>
-      <div>
-        <button onClick={handleBuy}>BUY</button>
+      <div className='buy-sell_div'>
+      <div className='button-div'>
+        <button onClick={handleBuy} className='action-button'>BUY</button>
 
       </div>
      
 
-      <div>
-      <button onClick={handleSell}>SELL</button>
+      <div className='button-div'>
+      <button onClick={handleSell} className='action-button'>SELL</button>
         
       </div>
       
-    </>
+      </div>
+      </div>
   )
 }
 
