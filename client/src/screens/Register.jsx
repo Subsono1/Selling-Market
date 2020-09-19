@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import Button from '@material-ui/core/Button';
 import styled, { keyframes } from "styled-components";
 import { fadeInLeft } from "react-animations";
 import './Register.css'
@@ -53,7 +54,7 @@ function Register(props) {
             onChange={handleChange}
           />
           <input className='register-form_input'
-            type="text"
+            type="password"
             name="password"
             value={password}
             placeholder="Make Your Password"
@@ -67,7 +68,7 @@ function Register(props) {
             onChange={handleChange}
           />
           <br/>
-          <button>Sign Up!</button>
+          <Button className="form-button" variant="contained" color="primary">Sign Up!</Button>
         </form>
       </FadeDiv>
     </>

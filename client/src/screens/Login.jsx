@@ -32,7 +32,7 @@ function Login(props) {
         
         <input type='text' name='username' value={username} placeholder='Please Enter User Name' onChange={handleChange}/>
         
-        <input type='text' name='password' value={password} placeholder='Please Enter Your Password' onChange={handleChange}/>
+        <input type='password' name='password' value={password} placeholder='Please Enter Your Password' onChange={handleChange}/>
         
         <button>Submit</button>
         <br />
