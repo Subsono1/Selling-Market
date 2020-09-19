@@ -16,7 +16,7 @@ function Header(props) {
         <button onClick ={props.handleLogout}>Logout</button>
 
       </div> :
-       <Link to='/login'className="link">Login/Register</Link> 
+       <Link to='/'className="link">Login/Register</Link> 
         }
         <Link to="/orders" className="link">Orders</Link>
        <Link to="/basket"> <ShoppingBasketIcon className="basket" style={{ fontSize: 35 }}>

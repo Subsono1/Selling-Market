@@ -2,17 +2,23 @@ import { Switch, Route, useHistory  } from 'react-router-dom';
 import React, { useEffect, useState } from 'react';
 
 import './App.css';
+import BuySell from './screens/BuySell';
 import Layout from './layout/Layout';
-import Login from './screens/Login'
+import Registration from './screens/Register';
+import Login from './screens/Login';
 
 import {loginUser, registerUser, verifyUser, removeToken } from './services/auth'
-import Registration from './screens/Register';
+import Buy from './screens/Buy';
+import Sell from './screens/Sell';
+
+
 
 
 
 
 function App() {
   const [currentUser, setCurrentUser] = useState(null)
+  const history = useHistory();
 
   useEffect(() => {
     const handleVerify = async () => {
@@ -25,7 +31,7 @@ function App() {
   const loginSubmit = async (loginData) => {
     const userData = await loginUser(loginData)
     setCurrentUser(userData)
-    // useHistory.push('/home')
+    history.push('/buy-sell')
     
 
   }
@@ -39,6 +45,7 @@ function App() {
     localStorage.removeItem('authToken')
     removeToken()
     setCurrentUser(null)
+    history.push('/')
   }
   
   return (
@@ -60,6 +67,19 @@ function App() {
             registerSubmit={registerSubmit}/>
 
         </Route>
+        <Route exact path='/buy-sell'>
+         <BuySell />
+
+        </Route>
+
+        <Route path='/buy'>
+          <Buy />
+        </Route>
+
+        <Route>
+          <Sell path='/sell'/>
+        </Route>
+
 
         </Switch>
         
