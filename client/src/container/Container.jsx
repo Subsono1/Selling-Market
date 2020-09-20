@@ -1,8 +1,10 @@
-import { Switch } from '@material-ui/core'
+import { Route, Switch } from 'react-router-dom'
 import React, { useEffect, useState } from 'react'
 import { useHistory } from 'react-router-dom'
-import { getAllOrders } from '../../services/orders'
-import { getAllProducts, putProduct } from '../../services/products'
+import Sell from '../screens/Sell'
+import { getAllOrders } from '../services/orders'
+import { getAllProducts, putProduct, deleteProduct, postProduct } from '../services/products'
+import Products from '../screens/Products'
 
 
 function Container(props) {
@@ -10,6 +12,8 @@ function Container(props) {
   const [orders, setOrders] = useState([])
 
   const history = useHistory()
+
+  const {currentUser} = props
 
   useEffect(() => {
     const fetchProducts = async () => {
@@ -36,6 +40,7 @@ function Container(props) {
   const createSubmit = async (formInfo) => {
     const createProduct = await postProduct(formInfo)
     setProducts(prevState => [...prevState, createProduct])
+    history.push('/products')
 
   }
 
@@ -49,13 +54,24 @@ function Container(props) {
 
 
   return (
-    <div>
-      <Switch>
+    
+    <Switch>
+      <Route path='/sell'>
+      <Sell 
+          createSubmit={createSubmit} />
+      </Route>
+      
+      <Route path='/products'>
+        <Products
+          products={products}
+          currentUser={currentUser}/>
 
-        
+      </Route>
+
+
       </Switch>
       
-    </div>
+    
   )
 }
 
