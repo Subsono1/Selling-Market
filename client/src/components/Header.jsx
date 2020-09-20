@@ -19,7 +19,7 @@ function Header(props) {
        <Link to='/'className="link">Login/Register</Link> 
         }
         <Link to="/orders" className="link">Orders</Link>
-       <Link to="/basket"> <ShoppingBasketIcon className="basket" style={{ fontSize: 35 }}>
+       <Link to="/basket"> <ShoppingBasketIcon className="basket" >
           
         </ShoppingBasketIcon> </Link>
         
