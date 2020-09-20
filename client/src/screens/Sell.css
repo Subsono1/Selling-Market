@@ -1,0 +1,105 @@
+* {
+  box-sizing: border-box;
+}
+
+.sell-div_form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 80px;
+  width: 645px;
+  height: 500px;
+  margin: auto;
+}
+
+.form {
+  width: 650px;
+  height: 450px;
+  margin: auto;
+}
+.sell-box-div_short {
+  padding: 10px;
+  display: inline-block;
+  padding-right: 20px;
+  width: 300px;
+  margin-right: 25px;
+}
+
+.sell-label {
+  display: block;
+  color: white;
+  font-size: 12px;
+}
+
+.sell-input_box {
+  display: inline-block;
+  width: 310px;
+  height: 45px;
+  border: none;
+  background-color: rgb(255, 254, 248);
+  outline: none;
+  color: black;
+  font-size: 40px;
+  border-top: 1px solid;
+}
+
+.sell-box_div {
+  display: block;
+  padding: 10px;
+}
+
+.long-input_box,
+.description {
+  width: 635px;
+  height: 50px;
+  padding: 10px;
+  border: none;
+  outline: none;
+  color: black;
+  font-size: 16px;
+  border-top: 1px solid;
+}
+.long-input_box {
+  font-size: 45px;
+}
+
+.description {
+  height: 90px;
+  resize: none;
+  font-size: 30px;
+}
+
+.sell-button_div {
+  display: flex;
+  flex-direction: row-reverse;
+  margin-top: 40px;
+}
+
+.sell-button {
+ 
+  color: rgb(34, 24, 24);
+  height: 60px;
+  width: 150px;
+  font-size: 24px;
+  font-weight: bold;
+  border-radius: 50px;
+  border: none;
+  outline: none;
+  cursor: pointer;
+}
+.sell-button:hover {
+  opacity: 0.8;
+}
+
+.sell-input_box::placeholder {
+  font-size: 45px;
+}
+
+.long-input_box::placeholder {
+  font-size: 38px;
+}
+
+.description::placeholder {
+  font-size: 35px;
+}
+
