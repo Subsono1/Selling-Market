@@ -25,6 +25,7 @@ nav {
 }
 .basket {
   
-  margin: 20px 35px;
-  padding: 10px;
+  margin: 20px 35px !important;
+  padding: 10px !important;
+  font-size: 58px !important;
 }
