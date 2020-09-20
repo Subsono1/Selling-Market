@@ -1,5 +1,6 @@
 class ProductsController < ApplicationController
-  before_action :set_product, only: [:show, :update, :destroy]
+  before_action :authorize_request, only: [:create, :update, :destroy]
+  before_action :set_product, only: [:show,  :update, :destroy]
 
   # GET /products
   def index
@@ -16,6 +17,7 @@ class ProductsController < ApplicationController
   # POST /products
   def create
     @product = Product.new(product_params)
+    @product.user = @current_user
 
     if @product.save
       render json: @product, status: :created, location: @product

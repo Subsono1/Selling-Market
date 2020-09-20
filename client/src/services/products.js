@@ -12,12 +12,12 @@ export const getOneProduct = async (id) => {
 }
 
 export const putProduct = async (id, formData) => {
-  const resp = await api.put(`/products/${id}`, { food: formData })
+  const resp = await api.put(`/products/${id}`, { product: formData })
   return resp.data;
 }
 
 export const postProduct = async (formData) => {
-  const resp = await api.post('/products', { food: formData })
+  const resp = await api.post('/products', { product: formData })
   return resp.data;
 }
 

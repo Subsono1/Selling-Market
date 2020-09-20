@@ -9,7 +9,8 @@ import Login from './screens/Login';
 
 import {loginUser, registerUser, verifyUser, removeToken } from './services/auth'
 import Buy from './screens/Buy';
-import Sell from './screens/Sell';
+import Container from './container/Container';
+
 
 
 
@@ -77,7 +78,7 @@ function App() {
         </Route>
 
         <Route>
-          <Sell path='/sell'/>
+          <Container />
         </Route>
 
 
