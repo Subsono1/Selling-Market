@@ -5,7 +5,7 @@ class OrdersController < ApplicationController
   def index
     @orders = Order.all
 
-    render json: @orders
+    render json: @orders, include: {user: {only: [:address, :username]}}
   end
 
   # GET /orders/1

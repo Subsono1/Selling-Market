@@ -39,7 +39,7 @@ function App() {
     const registerSubmit = async (registerData) => {
       const userData = await registerUser(registerData);
       setCurrentUser(userData);
-      history.push('/');
+      history.push('/buy-sell');
     }
 
     const handleLogout = () => {
