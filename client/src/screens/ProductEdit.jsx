@@ -14,16 +14,19 @@ function ProductEdit(props) {
   const {id} = useParams()
   const { products, updateSubmit} = props
   
+ 
   useEffect(() => {
-    const prefilForm = () => {
-     products.find(product => product.id === Number(id))
-      
-      setFormInfo({ title, price, img_url, description })
+    const prefillFormData = () => {
+      const oneProduct = products.find(product => {
+        return product.id === Number(id);
+      })
+      const { title, price, img_url, description } = oneProduct;
+      setFormInfo({ title, price, img_url, description });
     }
     if (products.length) {
-      prefilForm();
+      prefillFormData()
     }
-  }, [products])
+  }, [products, id])
   
 
 
