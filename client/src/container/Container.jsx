@@ -7,6 +7,7 @@ import { getAllProducts, putProduct, deleteProduct, postProduct } from '../servi
 import Products from '../screens/Products'
 import ProductEdit from '../screens/ProductEdit'
 import ProductDetail from '../screens/ProductDetail'
+import Orders from '../screens/Orders'
 
 
 function Container(props) {
@@ -36,7 +37,7 @@ function Container(props) {
   const updateSubmit = async (id, formInfo) => {
     const updatedProduct = await putProduct(id, formInfo)
     setProducts(prevState => prevState.map(product => product.id === Number(id) ? updatedProduct : product))
-    // history.push('/products')
+    history.push('/products')
   }
 
   const createSubmit = async (formInfo) => {
@@ -49,6 +50,7 @@ function Container(props) {
   const handleDelete = async (id) => {
     await deleteProduct(id)
     setProducts(prevState => prevState.filter(product => product.id !== id))
+    history.push('/products')
 
     
   }
@@ -82,7 +84,14 @@ function Container(props) {
           handleDelete={handleDelete}
           currentUser={currentUser}/>
         
-     </Route>
+      </Route>
+      
+      <Route exact path='/orders'>
+        <Orders
+          orders={orders}
+          products={products}/>
+
+      </Route>
 
 
       </Switch>
