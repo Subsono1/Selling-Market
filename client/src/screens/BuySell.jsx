@@ -6,7 +6,7 @@ function BuySell() {
   const history = useHistory()
 
   const handleBuy = () => {
-    history.push('/buy')
+    history.push('/products')
   }
 
   const handleSell = () => {

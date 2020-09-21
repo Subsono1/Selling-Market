@@ -19,6 +19,7 @@ function Header(props) {
        <Link to='/'className="link">Login/Register</Link> 
         }
         <Link to="/orders" className="link">Orders</Link>
+        {/* <Link to='/product-edit'className='link'>Edit</Link> */}
        <Link to="/basket"> <ShoppingBasketIcon className="basket" >
           
         </ShoppingBasketIcon> </Link>
