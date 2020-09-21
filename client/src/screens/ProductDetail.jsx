@@ -16,16 +16,21 @@ function ProductDetail(props) {
 
   return (
     <div>
-      <h1>detail product</h1>
+      <h1>You are looking at:</h1>
       {
-        currentUser && currentUser.id === product.user_id &&
+        product &&
 
       <div>
-        <h3>{product.title}</h3>
+          <h2>{product.title}</h2>
+          <h3>${product.price}</h3>
+          <div>
         <img src={product.img_url} alt={product.title} />
-          <p>{product.description}</p>
+            <p>{product.description}</p>
+          </div>
+          <>
           <Link to={`/products/${product.id}/edit`}>Update</Link>
-          <button onClick={()=> handleDelete(product.id)}>Delete</button>
+            <button onClick={() => handleDelete(product.id)}>Delete</button>
+            </>
         </div>
       }
     </div>

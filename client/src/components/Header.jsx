@@ -8,7 +8,7 @@ function Header(props) {
   return (
     <header>
       <nav>
-        <Link to="/" className="brand">Vending-Market</Link>
+        <Link to="/buy-sell" className="brand">Vending-Market</Link>
         {
         currentUser ?
           <div>
