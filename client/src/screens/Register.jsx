@@ -68,7 +68,8 @@ function Register(props) {
             onChange={handleChange}
           />
           <br/>
-          <Button className="form-button" variant="contained" color="primary">Sign Up!</Button>
+          {/* <Button className="form-button" variant="contained" color="primary">Sign Up!</Button> */}
+          <button className="form-button">Sign Up!</button>
         </form>
       </FadeDiv>
     </>
