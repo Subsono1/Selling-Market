@@ -35,5 +35,6 @@
   height: 50px !important;
   background: green !important;
   font-size: 20px !important;
+  cursor: pointer;
 }
 

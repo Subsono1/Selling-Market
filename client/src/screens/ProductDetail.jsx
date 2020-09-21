@@ -27,10 +27,12 @@ function ProductDetail(props) {
         <img src={product.img_url} alt={product.title} />
             <p>{product.description}</p>
           </div>
+          { currentUser.id === product.user_id &&
           <>
           <Link to={`/products/${product.id}/edit`}>Update</Link>
             <button onClick={() => handleDelete(product.id)}>Delete</button>
-            </>
+          </>
+      }
         </div>
       }
     </div>

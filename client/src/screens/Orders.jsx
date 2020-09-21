@@ -9,7 +9,7 @@ function Orders(props) {
       {orders.map(order => (
         <React.Fragment >
           
-            <h2>{order.address}</h2>
+            <h2>{order.user.address}</h2>
             
 
 

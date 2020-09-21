@@ -45,7 +45,7 @@ function ProductEdit(props) {
 <div className="sell-div_form">
         <form className="form" onSubmit={(e) => {
           e.preventDefault()
-          updateSubmit(formInfo)
+          updateSubmit(id, formInfo)
         }}>
           <div className="sell-box-div_short">
             

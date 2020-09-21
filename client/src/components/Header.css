@@ -53,6 +53,9 @@ nav {
 }
 
 .current-user {
+  color: #60AFFF;
+  font-family: 'Merriweather Sans', sans-serif;
+  font-weight: bold;
   font-size: 20px;
   margin-top: 12px;
 }
@@ -67,7 +70,7 @@ nav {
 
 .brand {
   font-family: 'MuseoModerno', cursive;
-  color: black;
+  color: #F87575;
   font-weight: bold;
   margin: 20px 20px;
   margin-right: auto;
@@ -78,8 +81,36 @@ nav {
 }
 .basket {
   color: #ffffff;
+  margin-left: 0 !important;
+  margin: 0px 20px !important;
+  padding-top: 5px !important;
+  font-size: 30px !important;
+  padding-left: 0 !important;
+}
+
+.basket-div {
+  margin: 20px 10px;
+  padding-top: 5px;
+ 
   
-  margin: 20px 35px !important;
-  padding: 10px !important;
-  font-size: 58px !important;
+  
+  
+  
+  
+}
+
+.basket-link {
+  text-decoration: none;
+  padding-left: 0;
+  
+}
+
+.basketCount {
+  color: #ffffff;
+  padding-right: 10px;
+  padding-left: 0px;
+  margin-left: 0;
+  font-size: 18px;
+  text-decoration: none;
+
 }
