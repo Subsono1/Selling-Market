@@ -1,21 +1,22 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
+import './Products.css'
 
 function Products(props) {
   const { products } = props
   
   return (
-    <div>
-      <h1>THIS ARE THE PRODUCTS</h1>
+    <div className='products-page'>
+      
       {products.map(product => (
-        <React.Fragment key={product.id}>
+        <div className='product-div'key={product.id}>
           <Link to={`/products/${product.id}`}>
-            <h2>{product.title}</h2>
-            <img src={product.img_url}></img>
+            <h2 className="product-title">{product.title}</h2>
+            <img className="product-image" src={product.img_url}></img>
 
 
           </Link>
-        </React.Fragment>
+        </div>
       ))}
 
 
