@@ -5,6 +5,8 @@ import Sell from '../screens/Sell'
 import { getAllOrders } from '../services/orders'
 import { getAllProducts, putProduct, deleteProduct, postProduct } from '../services/products'
 import Products from '../screens/Products'
+import ProductEdit from '../screens/ProductEdit'
+import ProductDetail from '../screens/ProductDetail'
 
 
 function Container(props) {
@@ -64,9 +66,23 @@ function Container(props) {
       <Route path='/products'>
         <Products
           products={products}
-          currentUser={currentUser}/>
+          />
 
       </Route>
+      <Route path='/products/:id/edit'>
+        <ProductEdit
+          products={products}
+          updateSubmit={updateSubmit}
+        />
+
+      </Route>
+      <Route path='/products/:id'>
+        <ProductDetail
+          products={products}
+          handleDelete={handleDelete}
+          currentUser={currentUser}/>
+        
+     </Route>
 
 
       </Switch>
