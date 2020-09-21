@@ -32,8 +32,8 @@
 }
 
 .product-image{
-  height: 400px;
-  width: 350px;
+  height: 350px;
+  width: 320px;
   margin-left: 25px ;
   border-radius: 8px;
   /* transform-origin: 30% 30% 80%;
@@ -43,7 +43,8 @@
 }
 
 .product-title {
-  padding-left: 20px;
+  color: #4A4E69;
+  padding-left: 30px;
   text-decoration: none;
   
   

@@ -2,6 +2,8 @@
 import React, { useState } from 'react'
 import { Link } from 'react-router-dom'
 import './Login.css'
+import Button from '@material-ui/core/Button';
+import SendIcon from '@material-ui/icons/Send';
 
 
 function Login(props) {
@@ -37,7 +39,15 @@ function Login(props) {
         
         <input className="login-input" type='password' name='password' value={password} placeholder='Please Enter Your Password' onChange={handleChange}/>
         <br/>
+        {/* <Button className="login-button" variant="contained"
+        color="primary"
+        // className={classes.button}
+          SendIcon={<SendIcon />}
+          onClick={loginSubmit}>Submit</Button>  */}
         <button className="login-button">Submit</button>
+        
+      
+      
         <br />
        
         <Link to='/register' className='register-link'>Register</Link>
