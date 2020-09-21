@@ -2,7 +2,7 @@ import React from 'react'
 import { Link } from 'react-router-dom'
 
 function Products(props) {
-  const { currentUser, products } = props
+  const { products } = props
   
   return (
     <div>
