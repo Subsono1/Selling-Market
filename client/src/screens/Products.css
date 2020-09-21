@@ -11,6 +11,7 @@
   
   
   
+  
 
   
  
@@ -24,6 +25,7 @@
   /* overflow: hidden; */
   transform-origin: 30% 30% 80%;
   transition: transform .7s, filter 1s ease-out;
+  
 
   
   
@@ -38,6 +40,7 @@
   border-radius: 8px;
   /* transform-origin: 30% 30% 80%;
   transition: transform .7s, filter 1s ease-out; */
+ 
   
 
 }
