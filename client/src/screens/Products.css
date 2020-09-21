@@ -1,0 +1,30 @@
+* {
+  box-sizing: border-box;
+}
+
+.products-page {
+  width: 100vw;
+  display: flex;
+  flex-flow: wrap;
+  padding: 100px;
+  /*  */
+  
+  
+
+  
+ 
+}
+.product-div {
+  width: 400px;
+  display: flex;
+  flex-flow: wrap;
+  margin: auto;
+  margin-top: 20px;
+  padding: 30px;
+ border: 1px solid green;
+}
+
+.product-image{
+  height: 300px;
+  width: 300px;
+}
