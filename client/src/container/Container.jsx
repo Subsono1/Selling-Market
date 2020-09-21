@@ -58,25 +58,25 @@ function Container(props) {
   return (
     
     <Switch>
-      <Route path='/sell'>
+      <Route exact path='/sell'>
       <Sell 
           createSubmit={createSubmit} />
       </Route>
       
-      <Route path='/products'>
+      <Route exact path='/products'>
         <Products
           products={products}
           />
 
       </Route>
-      <Route path='/products/:id/edit'>
+      <Route exact path='/products/:id/edit'>
         <ProductEdit
           products={products}
           updateSubmit={updateSubmit}
         />
 
       </Route>
-      <Route path='/products/:id'>
+      <Route exact path='/products/:id'>
         <ProductDetail
           products={products}
           handleDelete={handleDelete}

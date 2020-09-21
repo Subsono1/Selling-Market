@@ -4,10 +4,10 @@ import React, { useEffect, useState } from 'react';
 import './App.css';
 import BuySell from './screens/BuySell';
 import Layout from './layout/Layout';
-import Registration from './screens/Register';
+import Register from './screens/Register'
 import Login from './screens/Login';
 
-import {loginUser, registerUser, verifyUser, removeToken } from './services/auth'
+import { loginUser, registerUser, verifyUser, removeToken } from './services/auth';
 
 import Container from './container/Container';
 
@@ -18,37 +18,36 @@ import Container from './container/Container';
 
 
 function App() {
-  const [currentUser, setCurrentUser] = useState(null)
+  const [currentUser, setCurrentUser] = useState(null);
   const history = useHistory();
-
+// all auth functionalities should be listed here in the app since my layout is being called here. 
   useEffect(() => {
     const handleVerify = async () => {
-      const userData = await verifyUser()
-      setCurrentUser(userData)
-    }
-    handleVerify()
-  }, [])
+      const userData = await verifyUser();
+      setCurrentUser(userData);
+      // history.push("/");
+    };
+    handleVerify();
+  }, []);
 
   const loginSubmit = async (loginData) => {
-    const userData = await loginUser(loginData)
-    setCurrentUser(userData)
+    const userData = await loginUser(loginData);
+    setCurrentUser(userData);
     history.push('/buy-sell')
-    
+    }
 
-  }
+    const registerSubmit = async (registerData) => {
+      const userData = await registerUser(registerData);
+      setCurrentUser(userData);
+      history.push('/');
+    }
 
-  const registerSubmit = async (registerData) => {
-    const userData = await registerUser(registerData)
-    setCurrentUser(userData)
-    history.push('/buy-sell')
-  }
-
-  const handleLogout = () => {
-    localStorage.removeItem('authToken')
-    removeToken()
-    setCurrentUser(null)
-    history.push('/')
-  }
+    const handleLogout = () => {
+      localStorage.removeItem('authToken');
+      removeToken();
+      setCurrentUser(null);
+      history.push('/');
+    }
   
   return (
     <div>
@@ -64,8 +63,8 @@ function App() {
           <Login loginSubmit={loginSubmit}/>
         </Route>
         
-        <Route path='/register'>
-          <Registration
+        <Route exact path='/register'>
+          <Register
             registerSubmit={registerSubmit}/>
 
         </Route>
@@ -76,7 +75,7 @@ function App() {
 
        
 
-        <Route path='/'>
+        <Route  path='/'>
           <Container
             currentUser={currentUser}/>
         </Route>
