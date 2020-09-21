@@ -10,7 +10,8 @@ function Products(props) {
       
       {products.map(product => (
         <div className='product-div'key={product.id}>
-          <Link to={`/products/${product.id}`}>
+          <Link className="product-title" to={`/products/${product.id}`}>
+            
             <h2 className="product-title">{product.title}</h2>
             <img className="product-image" src={product.img_url}></img>
 

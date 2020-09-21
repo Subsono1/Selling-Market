@@ -2,8 +2,9 @@
   width: 100vw;
   display: flex;
   justify-content: center;
-  background-color: coral;
+  background-color: #F87575;
   bottom: 0;
   left: 0;
   position: fixed;
+  /* overflow: hidden; */
 }

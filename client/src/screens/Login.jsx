@@ -1,6 +1,7 @@
 
 import React, { useState } from 'react'
 import { Link } from 'react-router-dom'
+import './Login.css'
 
 
 function Login(props) {
@@ -21,8 +22,10 @@ function Login(props) {
   }
   
   return (
+    
     <div className='login-div'>
       <h2>Welcome! Please Login or Register</h2>
+      <br/>
       <form onSubmit={(e) => {
         e.preventDefault()
         loginSubmit(formInfo)
@@ -30,11 +33,11 @@ function Login(props) {
     
       
         
-        <input type='text' name='username' value={username} placeholder='Please Enter User Name' onChange={handleChange}/>
+        <input className="login-input" type='text' name='username' value={username} placeholder='Please Enter User Name' onChange={handleChange}/>
         
-        <input type='password' name='password' value={password} placeholder='Please Enter Your Password' onChange={handleChange}/>
-        
-        <button>Submit</button>
+        <input className="login-input" type='password' name='password' value={password} placeholder='Please Enter Your Password' onChange={handleChange}/>
+        <br/>
+        <button className="login-button">Submit</button>
         <br />
        
         <Link to='/register' className='register-link'>Register</Link>

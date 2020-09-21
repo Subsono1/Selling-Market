@@ -11,12 +11,16 @@ function Header(props) {
         <Link to="/buy-sell" className="brand">Vending-Market</Link>
         {
         currentUser ?
-          <div>
-        <p> {currentUser.username} </p>
-        <button onClick ={props.handleLogout}>Logout</button>
+          <div className="current-user-div">
+        <p className="current-user"> {currentUser.username} </p>
+        <button  className="logout" onClick ={props.handleLogout}>Logout</button>
 
-      </div> :
-       <Link to='/'className="link">Login/Register</Link> 
+            </div> :
+            <>
+              <Link to='/' className="link-login">Login</Link> 
+              <p className="divider">|</p>
+              <Link to='/register' className="link-register">Register</Link> 
+              </>
         }
         <Link to="/orders" className="link">Orders</Link>
         {/* <Link to='/product-edit'className='link'>Edit</Link> */}
