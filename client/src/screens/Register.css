@@ -25,6 +25,8 @@
 .register-form_input {
   padding: 10px;
   margin: 10px;
+  font-size: 28px;
+  color:#4A4E69;
   /* border-top: none; */
   border: none;
   border-bottom: solid 1px;

@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react'
 import { Link, useParams, useHistory } from 'react-router-dom'
-import { useStateValue } from '../components/StateProvider'
+
 import { fadeInUp, fadeInDown } from 'react-animations'
 import styled, { keyframes } from 'styled-components';
 
@@ -27,7 +27,7 @@ function ProductDetail(props) {
     }
   }, [products, id])
 
-  const [{ basket }, dispatch] = useStateValue();
+  
   const history = useHistory()
 
   const clickCheckout = () => {
@@ -35,19 +35,7 @@ function ProductDetail(props) {
   }
   
 
-  const addToBasket = () => {
-    
-    dispatch({
-      type: "ADD_TO_BASKET",
-      item: [{
-        id: product.id,
-        title: product.title,
-        image: product.img_url,
-        price: product.price
-       
-      }],
-    });
-  };
+  
 
   return (
     <div className="detail-div">

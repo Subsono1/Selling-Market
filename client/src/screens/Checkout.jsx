@@ -5,7 +5,7 @@ import Button from '@material-ui/core/Button';
 
 
 function Checkout(props) {
-  const { orders, products } = props;
+  const { orders, products, currentUser} = props;
   return (
     <div>
       {orders.map((order) => (
