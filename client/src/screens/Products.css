@@ -46,6 +46,8 @@
 }
 
 .product-title {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: bolder;
   color: #4A4E69;
   padding-left: 30px;
   text-decoration: none;
