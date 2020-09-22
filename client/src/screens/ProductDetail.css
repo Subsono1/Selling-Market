@@ -3,6 +3,8 @@
 }
 
 .h1{
+  font-family: 'Montserrat', sans-serif;
+  font-size: 40px;
   color: #4A4E69;
   padding: 40px;
   background-color:#F87575;
@@ -11,6 +13,19 @@
   opacity: .9;
   text-align: center;
   font-weight: 900;
+  box-shadow: 3px 12px 5px gray ;
+  border-radius: 8px;
+}
+
+.title {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 30px;
+  font-weight: 900;
+}
+
+.price {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 25px ;
 }
 
 .detail-div {
@@ -39,17 +54,19 @@
 .description-text {
  color: #4A4E69;
   border-bottom: 2px solid gray;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 20px;
   
 }
 
 .detail-img_div {
   display: flex;
- height: 500px;
+ height: 600px;
 
 }
 
 .detail-image {
-  height: 600px;
+  height: 640px;
   width: 600px;
   /* margin-bottom: 100px ; */
   margin-left: 20px;
@@ -61,7 +78,7 @@
 padding-left: 50px;
 width: 50vw;
 background: #60AFFF;
-height: 450px;
+height: 400px;
 padding-right: 40px;
 border-radius: 10px;
 opacity: .8;
@@ -70,6 +87,8 @@ box-shadow: 4px 3px 40px gray;
 }
 
 .detail-description {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 25px;
   color: #4A4E69;
   display: flex;
   justify-content: end;
@@ -107,10 +126,12 @@ box-shadow: 4px 3px 40px gray;
 
 .addto {
   /* padding-top:20px ; */
-  height: 30px;
-  width: 250px;
+
+  height: 40px;
+  width: 290px;
   cursor: pointer;
   outline: none;
+  padding-left: 10px;
 }
 
 .addto-div {
