@@ -114,3 +114,139 @@ nav {
   text-decoration: none;
 
 }
+
+/* @media screen and (max-width: 650px) {
+  .link-login, 
+  .link-register {
+    
+    font-size: 20px;
+    text-decoration: none;
+    margin-top: 30px;
+    padding-left: 10px;
+  }
+
+
+ 
+
+  .link {
+ 
+    font-size: 20px;
+    text-decoration: none;
+    margin: 24px 8px;
+    padding: 8px;
+  }
+
+  .brand {
+    
+    
+    font-size: 24px;
+    
+  }
+
+  .current-user {
+    
+    font-size: 14px;
+  
+  }
+
+  .logout {
+    height: 15px;
+    margin-left: 15px;
+    margin-top: 15px;
+    border: none;
+    cursor: pointer;
+  }
+
+  .basket {
+    color: #ffffff;
+    margin-left: 0 !important;
+    margin: 0px 0px !important;
+    padding-top: 5px !important;
+    font-size: 20px !important;
+    padding-left: 0 !important;
+  }
+  
+  .basket-div {
+    margin: 20px 10px;
+    padding-top: 5px;
+
+}
+} */
+
+@media screen and (max-width: 500px) {
+
+  .link-login, .link-register {
+    
+    font-size: 20px;
+    text-decoration: none;
+    margin-top: 30px;
+    padding-left: 10px;
+  }
+
+
+ 
+
+  .link {
+ 
+    font-size: 20px;
+    text-decoration: none;
+    margin: 24px 8px;
+    padding: 8px;
+  }
+
+  .brand {
+    
+    
+    font-size: 24px;
+    
+  }
+
+  .current-user {
+    
+    font-size: 14px;
+  
+  }
+
+  .logout {
+    height: 15px;
+    margin-left: 15px;
+    margin-top: 15px;
+    border: none;
+    cursor: pointer;
+  }
+
+  .basket {
+    color: #ffffff;
+    margin-left: 0 !important;
+    margin: 0px 0px !important;
+    padding-top: 5px !important;
+    font-size: 20px !important;
+    padding-left: 0 !important;
+  }
+  
+  .basket-div {
+    margin: 20px 10px;
+    padding-top: 5px;
+   
+    
+    
+    
+    
+    
+  }
+  
+  .basket-link {
+    text-decoration: none;
+    padding-left: 0;
+    
+  }
+
+  .basketCount {
+    
+    padding-left: 7px;
+    font-size: 14px;
+    text-decoration: none;
+  
+  }
+
+}
