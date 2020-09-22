@@ -70,7 +70,7 @@ function ProductDetail(props) {
         </div>
       }
       <div className="addto-div">
-        <button className="addto" onClick={clickCheckout }>Checkout!</button>
+       <Link to='/checkout'><button className="addto" >Checkout!</button></Link>
         </div>
     </div>
   )
