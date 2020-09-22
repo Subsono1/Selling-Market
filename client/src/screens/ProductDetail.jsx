@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react'
-import { Link, useParams } from 'react-router-dom'
+import { Link, useParams, useHistory } from 'react-router-dom'
 import { useStateValue } from '../components/StateProvider'
 import { fadeInUp, fadeInDown } from 'react-animations'
 import styled, { keyframes } from 'styled-components';
@@ -16,7 +16,7 @@ const DescriptionDiv = styled.div`
 
 function ProductDetail(props) {
   const [product, setProduct] = useState(null)
-  const {img_url, title,  price, currentUser, products, handleDelete } = props 
+  const {currentUser, products, handleDelete } = props 
   const { id } = useParams()
   
 
@@ -28,16 +28,22 @@ function ProductDetail(props) {
   }, [products, id])
 
   const [{ basket }, dispatch] = useStateValue();
+  const history = useHistory()
+
+  const clickCheckout = () => {
+    history.push('/checkout')
+  }
+  
 
   const addToBasket = () => {
     
     dispatch({
       type: "ADD_TO_BASKET",
       item: [{
-        id: id,
-        title: title,
-        image: img_url,
-        price: price
+        id: product.id,
+        title: product.title,
+        image: product.img_url,
+        price: product.price
        
       }],
     });
@@ -68,7 +74,7 @@ function ProductDetail(props) {
           { currentUser.id === product.user_id &&
             <>
             <div className="link-button">
-          <Link className="detail-update"to={`/products/${product.id}/edit`}>Update</Link>
+          <button className="detail-update"><Link className="detail-update_link" to={`/products/${product.id}/edit`}>Update</Link></button>
               <button className="delete-button" onClick={() => handleDelete(product.id)}>Delete</button>
               </div>
           </>
@@ -76,7 +82,7 @@ function ProductDetail(props) {
         </div>
       }
       <div className="addto-div">
-        <button className="addto" onClick={addToBasket}>Checkout!</button>
+        <button className="addto" onClick={clickCheckout }>Checkout!</button>
         </div>
     </div>
   )
