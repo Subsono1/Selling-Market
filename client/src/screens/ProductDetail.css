@@ -4,6 +4,7 @@
 
 .h1{
   font-family: 'Montserrat', sans-serif;
+  width: 100vw;
   font-size: 40px;
   color: #4A4E69;
   padding: 40px;
@@ -177,7 +178,12 @@ box-shadow: 4px 3px 40px gray;
 
 @media screen and (max-width: 500px) and (min-width: 330px) {
 
- 
+  .h1{
+    font-size: 25px;
+    width: 100vw;
+    padding-right: 0px;
+  }
+
    .detail-img_div {
      margin-top: 200px;
     display: flex;
@@ -195,13 +201,13 @@ box-shadow: 4px 3px 40px gray;
 
 .detail-image {
   height: 400px;
-  width: 350px;
+  width: 100vw;
 }
 
 .description-div {
   
  
-  width: 380px;
+  width: 100vw;
   height: 150px;
   padding-right: 20px;
   
@@ -256,6 +262,8 @@ box-shadow: 4px 3px 40px gray;
   .addto-div{
     padding-left: 20px;
   }
+
+
 
 }
 

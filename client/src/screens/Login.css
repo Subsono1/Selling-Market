@@ -91,3 +91,16 @@ width: 350px;
   color: #ffffff;
 }
 
+@media screen and (max-width: 500px) {
+
+  .welcome-text {
+    font-size: 30px;
+  }
+
+  .login-form {
+    width: 400px;
+  }
+}
+
+
+
