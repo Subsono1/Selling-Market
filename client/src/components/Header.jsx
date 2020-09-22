@@ -6,7 +6,8 @@ import { useStateValue } from './StateProvider';
 
 function Header(props) {
   const { currentUser } = props
-  const [{ basket }, dispatch] = useStateValue();
+  const [{ basket }] = useStateValue();
+  console.log(basket)
   return (
     <header>
       <nav>
@@ -24,12 +25,12 @@ function Header(props) {
               <Link to='/register' className="link-register">Register</Link> 
               </>
         }
-        <Link to="/orders" className="link">Orders</Link>
+        {/* <Link to="/orders" className="link">Orders</Link> */}
         {/* <Link to='/product-edit'className='link'>Edit</Link> */}
         
         <Link to="/checkout" className="basket-link">
           <div className="basket-div">
-            <ShoppingBasketIcon className=" basket" /><span className=" basketCount">{basket.length}</span>
+            <ShoppingBasketIcon className=" basket" /><span className=" basketCount">{basket?.length}</span>
        
            </div>
         </Link>

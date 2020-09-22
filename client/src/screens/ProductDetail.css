@@ -1,0 +1,180 @@
+*{
+  box-sizing: border-box;
+}
+
+.detail-div {
+  display: flex;
+ flex-flow: column wrap;
+ padding-bottom: 200px;
+  
+
+}
+
+.detail-title {
+  color: #4A4E69;
+  padding-top: 40px;
+  padding-left: 40px;
+
+  border-bottom: 1px solid;
+}
+
+.detail-price {
+  color: #4A4E69;
+  padding-left: 40px;
+}
+
+
+
+.description-text {
+ color: #4A4E69;
+  border-bottom: 2px solid gray;
+  
+}
+
+.detail-img_div {
+  display: flex;
+ height: 500px;
+
+}
+
+.detail-image {
+  height: 600px;
+  width: 500px;
+  /* margin-bottom: 100px ; */
+  margin-left: 20px;
+  padding-bottom: 150px;
+}
+
+.description-div {
+padding-left: 50px;
+width: 50vw;
+}
+
+.detail-description {
+  color: #4A4E69;
+  display: flex;
+  justify-content: end;
+  align-items: center;
+
+}
+
+.link-button {
+  display: flex;
+  justify-content: flex-end;
+  margin: 20px;
+  padding: 20px;
+  flex-flow: row wrap;
+}
+
+.addto-div {
+  /* padding: 50px; */
+  padding-bottom: 50px ;
+  width: 300px;
+  display: flex;
+  margin-left: 20px;
+  flex-flow: row wrap;
+  margin-bottom: 50px;
+  margin-top: 10px;
+ 
+  
+}
+
+.detail-update, .delete-button {
+  text-decoration: none;
+  width: 100px;
+  margin-left:0px;
+  margin-bottom: 0px;
+}
+
+.addto {
+  /* padding-top:20px ; */
+  height: 30px;
+  width: 250px;
+  cursor: pointer;
+  outline: none;
+}
+
+@media screen and (max-width: 500px) and (min-width: 330px) {
+
+ 
+   .detail-img_div {
+     margin-top: 200px;
+    display: flex;
+   flex-direction: column wrap;
+   flex-wrap: wrap;
+  
+  }
+  
+  
+  .description-text {
+    margin-bottom: 10px;
+    border-bottom: none;
+    
+  }
+
+.detail-image {
+  height: 400px;
+  width: 350px;
+}
+
+.description-div {
+  
+ 
+  width: 400px;
+  
+  
+  
+  }
+  
+.description-text 
+
+ {
+   width: 70vw;
+ font-size: 20px;
+ border-bottom: 1px solid gray;
+ margin-top: 0px;
+ 
+ padding-right: 0px;
+ 
+
+}
+
+  .detail-description {
+    padding-bottom: 100px;
+  
+  }
+  .detail-title {
+    padding-top: 40px;
+    padding-left: 40px;
+  
+    border-bottom: 1px solid;
+  }
+
+  .detail-update, .delete-button {
+   
+    text-decoration: none;
+    width: 100px;
+    margin-top:50px;
+    margin-bottom: 0px;
+    
+  }
+
+  .link-button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 30px;
+    display: flex;
+    justify-content: flex-start;
+    
+    
+  }
+
+  .addto-div{
+    padding-left: 20px;
+  }
+
+}
+
+ 
+
