@@ -30,7 +30,7 @@ function Register(props) {
 
   return (
     <>
-      <h2>Please Register</h2>
+      <h2 className="please-register">Please Register To Get In</h2>
 
       <FadeDiv className='register-div'>
         <form

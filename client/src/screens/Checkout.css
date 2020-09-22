@@ -1,0 +1,145 @@
+.order-div {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  margin-top: 20px;
+  margin-left: 10px;
+  padding: 40px;
+  box-shadow: 9px 9px 20px lightgray;
+  width: 420px;
+}
+
+.order-title {
+  font-size: 22px;
+  padding-bottom: 0px;
+  font-family: 'Merriweather Sans', sans-serif;
+  color: #4A4E69;
+}
+
+.username {
+  font-size: 20px;
+  font-family: 'Merriweather Sans', sans-serif;
+  color: #F87575;
+}
+
+.card-div {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  background:#60AFFF;
+  width: 400px;
+  height: 400px;
+  padding: 20px;
+  margin: auto;
+  border-radius: 20px;
+  margin-top: 40px;
+  margin-bottom: 150px;
+
+  
+}
+
+.card-image {
+  display: flex;
+  justify-content: left;
+  width: 340px;
+  padding: 10px;
+  margin-right: 20px;
+}
+ .credit-card {
+   height: 30px;
+   width: 38px;
+   padding: 4px;
+   padding-left: 0;
+   padding-right:0px ;
+   margin-left: 10px;
+ }
+
+
+
+.card-input {
+  background: #ffffff;
+  opacity: .7;
+  outline: none;
+  
+  border: none;
+  width: 360px;
+  height: 33px;
+  margin: 15px;
+  border-radius: 10px;
+  
+}
+
+
+
+
+.one-time-div, .recurring-div {
+  width: 155px;
+  margin-right:auto;
+
+ 
+
+}
+.input-circle {
+  border:1px solid black;
+}
+
+.one-time-div {
+  background: rgb(59, 72, 152);
+}
+
+.card-input::placeholder {
+  color: #4A4E69;
+  padding-left: 10px;
+  font-size: 20px;
+
+}
+
+.pay {
+  display: flex !important;
+  justify-content: center !important;
+    align-items: center !important;
+    margin: auto !important;
+    width: 300px !important;
+    height: 30px !important;
+    outline: none !important;
+    cursor: pointer !important;
+    border: none !important;
+    border-radius: 8px !important;
+    
+
+}
+
+@media screen and (max-width: 700px){
+  .amount-donate_box {
+    display: flex;
+    justify-content: center;
+    /* margin-right: 20px; */
+    flex-direction: column;
+    align-items: center;
+}
+
+.card-div {
+  
+  
+  width: 340px;
+  height: 400px;
+  margin-bottom: 200px;
+  
+}
+.card-input {
+  background: #ffffff;
+  opacity: .7;
+  outline: none;
+  
+  border: none;
+  width: 300px;
+  height: 33px;
+  margin: 15px;
+  border-radius: 10px;
+  
+}
+.order-div {
+ 
+  width: 300px;
+}
+}

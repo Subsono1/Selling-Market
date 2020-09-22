@@ -86,9 +86,12 @@
   border: none;
   outline: none;
   cursor: pointer;
+  transition: transform .7s, filter 2s ease-out;
 }
 .sell-button:hover {
   opacity: 0.8;
+  background: #F87575;
+  transform: scale(1.3)
 }
 
 .sell-input_box::placeholder {

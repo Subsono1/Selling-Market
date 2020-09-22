@@ -1,3 +1,11 @@
+
+
+.please-register{
+  padding: 50px;
+  font-size: 30px;
+  color:#4A4E69;
+}
+
 .register-div {
   display: flex;
   justify-content: center;
@@ -30,11 +38,20 @@
 }
 
  .form-button  {
+   color:#4A4E69 ;
+   font-weight: 900;
   width: 200px !important;
   margin-left: 10px !important;
   height: 50px !important;
-  background: green !important;
+  background: #60AFFF ;
   font-size: 20px !important;
   cursor: pointer;
+  border: none;
+  transition: transform .3s, filter 2s ease-out;
+}
+
+.form-button:hover {
+  background: #F87575;
+  transform: scale(1.1)
 }
 

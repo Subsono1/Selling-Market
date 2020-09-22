@@ -2,8 +2,15 @@
 import React, { useState } from 'react'
 import { Link } from 'react-router-dom'
 import './Login.css'
-import Button from '@material-ui/core/Button';
-import SendIcon from '@material-ui/icons/Send';
+
+import styled, { keyframes } from 'styled-components';
+import { fadeInDown} from 'react-animations';
+ 
+const fadeIn = keyframes`${fadeInDown}`;
+ 
+const FadeDiv = styled.div`
+  animation: 3s ${fadeIn};
+`;
 
 
 function Login(props) {
@@ -26,8 +33,11 @@ function Login(props) {
   return (
     
     <div className='login-div'>
-      <h2>Welcome! Please Login or Register</h2>
-      <br/>
+      <FadeDiv>
+        <h2 className="welcome-text">Welcome! Please Login or Register</h2>
+        </FadeDiv>
+      <br />
+      <FadeDiv>
       <form onSubmit={(e) => {
         e.preventDefault()
         loginSubmit(formInfo)
@@ -53,6 +63,7 @@ function Login(props) {
         <Link to='/register' className='register-link'>Register</Link>
 
         </form>
+        </FadeDiv>
       </div>
   )
 }
