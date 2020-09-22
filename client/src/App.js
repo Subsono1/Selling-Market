@@ -75,7 +75,7 @@ function App() {
 
        
 
-        <Route  path='/'>
+        <Route   path='/'>
           <Container
             currentUser={currentUser}/>
         </Route>

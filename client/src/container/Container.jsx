@@ -89,7 +89,8 @@ function Container(props) {
       <Route exact path='/checkout'>
         <Checkout
           orders={orders}
-          products={products}/>
+          products={products}
+          currentUser={currentUser}/>
 
       </Route>
 
