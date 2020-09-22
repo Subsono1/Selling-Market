@@ -4,7 +4,9 @@ import './Footer.css'
 function Footer() {
   return (
     <div className="footer">
-      <h2>This is the footer</h2>
+      <h3 className="my-name">©Sebastian Duarte app</h3>
+      <br/>
+      <h3 className="ruby">Made Using Ruby On Rails Back End</h3>
     </div>
   )
 }

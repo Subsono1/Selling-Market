@@ -2,6 +2,19 @@
   box-sizing: border-box;
 }
 
+.products-text {
+  font-family: 'Spinnaker', sans-serif;
+  color: #F87575;
+  padding: 40px;
+  font-size: 30px;
+  border-bottom: 1px solid gray;
+  width: 100vw;
+  background: rgb(255, 254, 254);
+ 
+  box-shadow: 3px 4px 8px ;
+
+}
+
 .products-page {
   width: 100vw;
   display: flex;
