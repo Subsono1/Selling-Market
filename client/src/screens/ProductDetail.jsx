@@ -33,13 +33,13 @@ function ProductDetail(props) {
     
     dispatch({
       type: "ADD_TO_BASKET",
-      item: {
+      item: [{
         id: id,
         title: title,
         image: img_url,
         price: price
        
-      },
+      }],
     });
   };
 
@@ -53,10 +53,10 @@ function ProductDetail(props) {
 
       <div >
           <div className='detail-title'>
-          <h2>{product.title}</h2>
+          <h2 className="title">{product.title}</h2>
           </div>
           <div className="detail-price">
-            <h2>Price:${product.price}</h2>
+            <h2 className="price">Price:${product.price}</h2>
             </div>
           <div className="detail-img_div">
             <img className="detail-image" src={product.img_url} alt={product.title} />
@@ -76,7 +76,7 @@ function ProductDetail(props) {
         </div>
       }
       <div className="addto-div">
-        <button className="addto" onClick={addToBasket}>Add To Basket</button>
+        <button className="addto" onClick={addToBasket}>Checkout!</button>
         </div>
     </div>
   )
