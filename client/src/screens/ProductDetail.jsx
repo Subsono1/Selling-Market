@@ -31,7 +31,7 @@ function ProductDetail(props) {
   const history = useHistory()
 
   const clickCheckout = () => {
-    history.push('/checkout')
+    history.push('/products/checkout')
   }
   
 
