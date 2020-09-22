@@ -2,6 +2,17 @@
   box-sizing: border-box;
 }
 
+.h1{
+  color: #4A4E69;
+  padding: 40px;
+  background-color:#F87575;
+  padding: 50px;
+  margin: auto;
+  opacity: .9;
+  text-align: center;
+  font-weight: 900;
+}
+
 .detail-div {
   display: flex;
  flex-flow: column wrap;
@@ -39,15 +50,23 @@
 
 .detail-image {
   height: 600px;
-  width: 500px;
+  width: 600px;
   /* margin-bottom: 100px ; */
   margin-left: 20px;
   padding-bottom: 150px;
+  padding-right: 30px;
 }
 
 .description-div {
 padding-left: 50px;
 width: 50vw;
+background: #60AFFF;
+height: 450px;
+padding-right: 40px;
+border-radius: 10px;
+opacity: .8;
+box-shadow: 4px 3px 40px gray;
+
 }
 
 .detail-description {
@@ -73,7 +92,7 @@ width: 50vw;
   display: flex;
   margin-left: 20px;
   flex-flow: row wrap;
-  margin-bottom: 50px;
+  margin-bottom: 0px;
   margin-top: 10px;
  
   
@@ -92,6 +111,10 @@ width: 50vw;
   width: 250px;
   cursor: pointer;
   outline: none;
+}
+
+.addto-div {
+  margin-bottom:0px ;
 }
 
 @media screen and (max-width: 500px) and (min-width: 330px) {
@@ -120,7 +143,9 @@ width: 50vw;
 .description-div {
   
  
-  width: 400px;
+  width: 380px;
+  height: 150px;
+  padding-right: 20px;
   
   
   

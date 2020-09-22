@@ -1,12 +1,22 @@
 import React, { useState, useEffect } from 'react'
 import { Link, useParams } from 'react-router-dom'
-// import { useStateValue } from "./StateProvider";
+import { useStateValue } from '../components/StateProvider'
+import { fadeInUp, fadeInDown } from 'react-animations'
+import styled, { keyframes } from 'styled-components';
+
 
 import './ProductDetail.css'
 
+
+const fadeInAnimation = keyframes`${fadeInDown}`;
+ 
+const DescriptionDiv = styled.div`
+  animation: 2.5s ${fadeInAnimation};
+`;
+
 function ProductDetail(props) {
   const [product, setProduct] = useState(null)
-  const { currentUser, products, handleDelete } = props 
+  const {img_url, title,  price, currentUser, products, handleDelete } = props 
   const { id } = useParams()
   
 
@@ -17,26 +27,26 @@ function ProductDetail(props) {
     }
   }, [products, id])
 
-  // const [{ basket }, dispatch] = useStateValue();
+  const [{ basket }, dispatch] = useStateValue();
 
-  // const addToBasket = () => {
+  const addToBasket = () => {
     
-  //   dispatch({
-  //     type: "ADD_TO_BASKET",
-  //     item: {
-  //       id: id,
-  //       title: product.title,
-  //       image: product.image,
-  //       price: product.price,
+    dispatch({
+      type: "ADD_TO_BASKET",
+      item: {
+        id: id,
+        title: title,
+        image: img_url,
+        price: price
        
-  //     },
-  //   });
-  // };
+      },
+    });
+  };
 
   return (
     <div className="detail-div">
       <div>
-        <h1>You are looking at:</h1>
+        <h1 className="h1">You are looking at:</h1>
         </div>
       {
         product &&
@@ -50,10 +60,10 @@ function ProductDetail(props) {
             </div>
           <div className="detail-img_div">
             <img className="detail-image" src={product.img_url} alt={product.title} />
-            <div className="description-div">
+            <DescriptionDiv className="description-div">
               <p className="description-text">Descritpion:</p>
               <h4 className="detail-description" >{product.description}</h4>
-              </div>
+              </DescriptionDiv>
           </div>
           { currentUser.id === product.user_id &&
             <>
@@ -66,7 +76,7 @@ function ProductDetail(props) {
         </div>
       }
       <div className="addto-div">
-        <button className="addto">Add To Basket</button>
+        <button className="addto" onClick={addToBasket}>Add To Basket</button>
         </div>
     </div>
   )
