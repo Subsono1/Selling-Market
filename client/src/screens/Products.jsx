@@ -7,6 +7,8 @@ function Products(props) {
   
   
   return (
+    <>
+    <h3 className="products-text">FIND YOUR PRODUCTS HERE! THE BEST PLACE ONLINE</h3>
     <div className='products-page'>
       
       {products.map(product => (
@@ -19,11 +21,13 @@ function Products(props) {
 
           </Link>
         </div>
+        
       ))}
 
 
       
-    </div>
+      </div>
+      </>
   )
 }
 

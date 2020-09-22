@@ -2,6 +2,19 @@
   box-sizing: border-box;
 }
 
+.products-text {
+  font-family: 'Audiowide', cursive;
+  color: #F87575;
+  padding: 40px;
+  font-size: 30px;
+  border-bottom: 1px solid gray;
+  width: 100vw;
+  background: rgb(243, 238, 238);
+  border-radius: 80px;
+  
+
+}
+
 .products-page {
   width: 100vw;
   display: flex;
