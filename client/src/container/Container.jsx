@@ -7,7 +7,7 @@ import { getAllProducts, putProduct, deleteProduct, postProduct } from '../servi
 import Products from '../screens/Products'
 import ProductEdit from '../screens/ProductEdit'
 import ProductDetail from '../screens/ProductDetail'
-import Orders from '../screens/Orders'
+import Checkout from '../screens/Checkout'
 
 
 function Container(props) {
@@ -87,7 +87,7 @@ function Container(props) {
       </Route>
       
       <Route exact path='/orders'>
-        <Orders
+        <Checkout
           orders={orders}
           products={products}/>
 
