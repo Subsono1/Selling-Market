@@ -28,11 +28,11 @@ function ProductDetail(props) {
   }, [products, id])
 
   
-  const history = useHistory()
+  // const history = useHistory()
 
-  const clickCheckout = () => {
-    history.push('/checkout')
-  }
+  // const clickCheckout = () => {
+  //   history.push('/checkout')
+  // }
   
 
   
@@ -70,7 +70,7 @@ function ProductDetail(props) {
         </div>
       }
       <div className="addto-div">
-       <Link to='/checkout'><button className="addto" >Checkout!</button></Link>
+       <Link to='/product/checkout'><button className="addto" >Checkout!</button></Link>
         </div>
     </div>
   )
